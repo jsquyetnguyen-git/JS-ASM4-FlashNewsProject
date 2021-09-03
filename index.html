@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <LINK REL="SHORTCUT ICON" HREF="img/logo.png">
+    <title>Flash News</title>
+</head>
+
+<body>
+    <header class="container-fluid d-flex align-items-center">
+        <div class="flex-grow-1">
+            <a href="#"><img src="img/logo.png" alt="logo"></a>
+        </div>
+
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></i></a>
+        </div>
+    </header>
+
+    <nav>
+        <!-- ad box -->
+        <div class="container" id="ad">
+            <img class="border rounded border-dark" src="img/forad 728x90.jpg" alt="ad">
+        </div>
+
+        <!-- menu -->
+        <div class="container d-flex align-items-center" id="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">Categories</a></li>
+            <li class="flex-grow-1"><a href="#">Contact</a></li>
+
+            <div id="search">
+                <button type="button" class="btn"><i class="fas fa-search"></i></button>
+
+            </div>
+        </div>
+    </nav>
+
+    <article class="container mt-3">
+        <div class="row">
+            <!-- left side -->
+            <div class="col-xs-12 col-md-12 col-lg-9 border" id="news">
+                <div class="mb-2 border border-dark text-center">
+                    <p class="textbox">Top news around the world</p>
+                </div>
+                <!-- LOADING ICON -->
+                <div id="loading" class="text-center d-none">
+                    <img class="w-50" src="img/Spinner-0.9s-800px.gif" alt="LOADING">
+                </div>
+            </div>
+
+            <!-- right side -->
+            <div class="col-xs-12 col-md-12 col-lg-3 border" id="ad2">
+                <div class="mb-2 border border-dark text-center">
+                    <p class="textbox">Breaking-news</p>
+                </div>
+                <div id="loading-brnews" class="text-center d-none">
+                    <img class="w-50" src="img/Spinner-0.9s-800px.gif" alt="LOADING">
+                </div>
+                <div class="breakingnews">
+
+                </div>
+
+                <img class="w-100 mt-3 border border-dark rounded" src="img/ad 300x300.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Search box modal -->
+        <div class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Search</h5>
+                        <button type="button" class="btn-close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- keyword -->
+                        <label for="searchVal">Keyword</label>
+                        <input class="w-100" id="searchVal" type="text">
+                        <!-- data -->
+                        <div class="row mt-2">
+                            <div class="col-6">
+                                <label for="startdate">Start date</label>
+                                <input class="w-100 form-control form-control-sm" type="date" id="startdate">
+                            </div>
+                            <div class="col-6">
+                                <label for="enddate">End date</label>
+                                <input class="w-100 form-control form-control-sm" type="date" id="enddate">
+                            </div>
+                        </div>
+                        <!-- language & country -->
+                        <div class="row mt-2">
+                            <div class="col-6">
+                                <select id="country" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option selected>Choose country</option>
+                                    <option value="jp">Japan</option>
+                                    <option value="us">United States</option>
+                                    <option value="cn">China</option>
+                                  </select>
+                            </div>
+                            <div class="col-6">
+                                <select id="language" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option selected>Choose language</option>
+                                    <option value="en">English</option>
+                                    <option value="ja">Japanese</option>
+                                    <option value="zh">Chinese</option>
+                                  </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <footer class="container-fluid d-flex align-items-center mt-5">
+        <p class="flex-grow-1">Copyright © 2021 FlashNews.</p>
+        <p>Fx10152-Nguyen Van Quyet</p>
+    </footer>
+</body>
+
+</html>

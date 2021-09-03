@@ -1,0 +1,134 @@
+header {
+    background-color: rgb(32, 32, 32);
+    height: 35px;
+    position: fixed;
+}
+
+header img {
+    height: 30px;
+}
+
+.social i,
+#search i {
+    color: #ffffff;
+    font-size: 17px;
+    padding-right: 5px;
+}
+
+#ad img {
+    margin-top: 40px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+#ad {
+    padding: 0;
+}
+
+#menu {
+    background-color: rgb(32, 32, 32);
+    height: 40px;
+    list-style-type: none;
+}
+
+#menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: rgb(168, 168, 168);
+    font-size: 17px;
+}
+
+#menu li {
+    padding-right: 15px;
+}
+
+footer {
+    background-color: rgb(32, 32, 32);
+    height: 40px;
+}
+
+footer p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.newsbox {
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.publishedAt {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.thumbnail {
+    padding-top: 5px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.title-brknews {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.content {
+    font-size: 14px;
+}
+
+.textbox {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        font-size: 12px;
+    }
+    .title,
+    .title-brknews {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    footer p {
+        font-size: 11px;
+    }
+    header {
+        position: static;
+    }
+    #ad img {
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+    #menu {
+        height: 35px;
+    }
+    #menu a,
+    #search i {
+        font-size: 14px;
+    }
+    .content {
+        display: none;
+    }
+    .title,
+    .title-brknews {
+        font-size: 14px;
+    }
+    .publishedAt {
+        display: none;
+    }
+}
