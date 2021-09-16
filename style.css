@@ -1,6 +1,6 @@
 header {
     background-color: rgb(32, 32, 32);
-    height: 35px;
+    height: 50px;
     position: fixed;
 }
 
@@ -16,7 +16,7 @@ header img {
 }
 
 #ad img {
-    margin-top: 40px;
+    margin-top: 55px;
     margin-bottom: 5px;
     width: 100%;
 }
